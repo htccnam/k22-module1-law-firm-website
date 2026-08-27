@@ -1,15 +1,12 @@
 .header {
     display: flex;
-    width: 523;
-    height: 28;
-    top: 50px;
-    left: 458px;
-    opacity: 1;
+    width: 117rem;
+    height: 6.7rem;
     text-decoration: none;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 5rem;
+    margin: 2rem auto;
 }
 
 .logo-container {

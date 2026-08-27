@@ -1,0 +1,33 @@
+:root {
+    --font-size-primary-imformation: 1.8rem;
+    --color-bg-button: #fd6038;
+}
+
+/* information */
+.container {
+    display: flex;
+    font-size: var(--font-size-primary-imformation);
+    line-height: 3rem;
+    margin: 0 auto;
+}
+.information-page {
+    width: 57rem;
+    height: 45.8rem;
+}
+.detail--strong {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 7rem;
+}
+.button {
+    background: var(--color-bg-button);
+    color: white;
+    width: 24rem;
+    height: 6rem;
+}
+
+/* video */
+.information-video {
+    width: 65.6rem;
+    height: 56.8rem;
+}
