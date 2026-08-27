@@ -8,11 +8,12 @@
     align-items: center;
     margin: 2rem auto;
 }
-
+/* logo */
 .logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
 }
 .logo-container__svg {
     width: 3.1rem;

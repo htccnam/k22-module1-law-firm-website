@@ -1,3 +1,7 @@
+:root {
+    --font-manrope: "Manrope", serif;
+    --font-roboto: "Roboto Slab", serif;
+}
 /* reset css */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -130,7 +134,7 @@ table {
 }
 /*css */
 :root {
-    font-family: "Roboto Slab", serif;
+    font-family: var(--font-roboto);
     background: #f8ebc9;
     font-size: 62.5%;
 }

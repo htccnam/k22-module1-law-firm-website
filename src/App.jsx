@@ -1,7 +1,11 @@
-// src/App.jsx
+// src/App.css
 import "./App.css";
-import Header from "./components/Header"; // 1. Import Header vừa tạo
+//Import Header
+import Header from "./components/Header";
+//Import HomePage
 import HomePage from "./components/HomePage";
+// import Footer
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -11,6 +15,7 @@ function App() {
 
             {/* Nội dung phía dưới của trang web */}
             <HomePage />
+            <Footer />
         </div>
     );
 }

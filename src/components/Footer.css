@@ -1,0 +1,110 @@
+:root {
+    --font-manrope: "Manrope", serif;
+    --font-size-footer: 1.6rem;
+    --color-primary-text: #ffffff;
+    --color-primary-link: #beccc7;
+    --color-bg-footer: #000000;
+}
+.Footer-container {
+    width: 100%;
+    max-height: 58.3rem;
+    font-family: var(--font-manrope);
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg-footer);
+}
+
+/* imformation + map ... */
+.imformation-page {
+    display: grid;
+    grid-template-areas: "policy pages contact map map";
+    justify-content: space-evenly;
+
+    color: var(--color-primary-text);
+    text-decoration: none;
+    line-height: 2.8rem;
+    border: #313d39 solid 0.1rem;
+    border-color: var(--color-bg-footer) var(--color-bg-footer) #313d39
+        var(--color-bg-footer);
+    padding: 3rem 0;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* policy */
+.policy {
+    grid-area: policy;
+    width: 14.5rem;
+    height: 17rem;
+}
+.title {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+.policy__link {
+    color: var(--color-primary-link);
+    text-decoration: none;
+}
+/* pages */
+.section__pages {
+    grid-area: pages;
+    width: 10.7rem;
+    height: 21.4rem;
+}
+/* contact */
+.section__contact {
+    grid-area: contact;
+    width: 23.7rem;
+    height: 16.6rem;
+}
+/* map */
+.section__map {
+    grid-area: map;
+    max-width: 47rem;
+    max-height: 26.8rem;
+    border-radius: 1rem;
+}
+/* copyrightfooter */
+/* logo */
+.copyright .logo-container__svg {
+    width: 3.1rem;
+    height: 3.1rem;
+}
+.copyright .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-primary-text);
+}
+.copyright .brand-name {
+    font-weight: Bold;
+    font-size: 2.4rem;
+    line-height: 1.4rem;
+}
+.copyright .brand-type {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 0.4rem;
+}
+.copyright {
+    font-family: var(--font-manrope);
+    color: var(--color-primary-link);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 5rem 2rem 5rem;
+}
+.social-item {
+    width: 3.6rem;
+    height: 3.6rem;
+    background: #313d39;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
