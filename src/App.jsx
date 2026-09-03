@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Services from "./components/Services";
 import Features from "./components/Features";
+import Attorneys from "./components/Attorneys";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             <About />
             <Services />
             <Features />
+            <Attorneys />
             <Footer />
         </div>
     );

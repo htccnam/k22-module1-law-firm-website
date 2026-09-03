@@ -1,0 +1,145 @@
+:root {
+    --color-bg-team: #0e1412;
+}
+
+.team-container {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-bg-team);
+    font-family: var(--font-manrope);
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* phần giới thiệu */
+.team-intro {
+    text-align: center;
+    max-width: 80rem;
+}
+
+.team-tag {
+    color: var(--color-primary);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.team-title {
+    color: var(--color-primary-text);
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.team-view-profile-btn {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0.8rem;
+    width: 18rem;
+    height: 5.5rem;
+    font-family: var(--font-manrope);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+.team-view-profile-btn:hover {
+    background-color: #e85530;
+    transform: scale(1.02);
+}
+
+/* grid luật sư */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    max-width: 100rem;
+}
+
+.team-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.2rem;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-0.5rem);
+}
+
+.team-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #1a1f1d; /* màu nền tạm cho khung ảnh */
+    margin-bottom: 1.5rem;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* overlay button - ẩn mặc định, hiện khi hover card */
+.team-card-overlay-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1rem 2rem;
+    font-family: var(--font-manrope);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+    transition:
+        opacity 0.3s ease,
+        background 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+.team-card-image:hover .team-card-overlay-btn {
+    opacity: 1;
+}
+
+.team-card-overlay-btn:hover {
+    background-color: #e85530;
+}
+
+.team-name {
+    color: var(--color-primary-text);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin: 0 0 0.3rem 0;
+}
+
+.team-role {
+    color: var(--color-primary-link);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin: 0;
+}
