@@ -10,6 +10,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Features from "./components/Features";
 import Attorneys from "./components/Attorneys";
+import Awards from "./components/Awards";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
             <Services />
             <Features />
             <Attorneys />
+            <Awards />
             <Footer />
         </div>
     );

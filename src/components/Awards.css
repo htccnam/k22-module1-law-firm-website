@@ -1,0 +1,85 @@
+:root {
+    --color-bg-awards: #0e1412;
+}
+
+.awards-container {
+    width: 100%;
+    min-height: 70rem;
+    background: var(--color-bg-awards);
+    font-family: var(--font-manrope);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    gap: 5rem;
+}
+
+.awards-header {
+    text-align: center;
+}
+
+.awards-tag {
+    color: var(--color-primary);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.awards-title {
+    color: var(--color-primary-text);
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+}
+
+.awards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem 6rem;
+    max-width: 100rem;
+    width: 100%;
+}
+
+.award-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 16rem;
+    transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+    transform: translate(-0.8rem);
+}
+
+.award-image-wrapper {
+    width: 12rem;
+    height: 12rem;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.award-card:hover .award-image-wrapper {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 3rem rgba(253, 96, 56, 0.25);
+}
+
+.award-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #ffffff;
+    display: block;
+}
