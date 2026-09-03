@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 // import Footer
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             {/* Nội dung phía dưới của trang web */}
             <HomePage />
             <About />
+            <Services />
             <Footer />
         </div>
     );

@@ -14,6 +14,7 @@
     width: 57rem;
     height: 45.8rem;
     flex: 1;
+    margin-left: 3rem;
 }
 .detail--strong {
     font-size: 6rem;

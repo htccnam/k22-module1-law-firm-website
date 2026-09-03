@@ -1,0 +1,117 @@
+:root {
+    --color-bg-services: #0e1412;
+}
+
+.Services-container {
+    width: 100%;
+    min-height: 70rem;
+    background: var(--color-bg-services);
+    font-family: var(--font-manrope);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    gap: 4rem;
+}
+
+.services-header {
+    text-align: center;
+    max-width: 70rem;
+}
+
+.services-tag {
+    color: var(--color-primary);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.services-title {
+    color: var(--color-primary-text);
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-description {
+    color: var(--color-primary-link);
+    font-family: var(--font-manrope);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    max-width: 100rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    border-radius: 1.2rem;
+    padding: 8rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 22rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-0.5rem);
+    border-color: var(--color-primary);
+    box-shadow: 0 1rem 3rem rgba(253, 96, 56, 0.2);
+}
+
+.service-name-button {
+    background: #ffffff;
+    color: black;
+    font-family: var(--font-manrope);
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: color 0.3s linear;
+    margin-top: auto;
+}
+.service-name-button:hover {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.view-all-btn {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0.8rem;
+    width: 16.6rem;
+    height: 6rem;
+    font-family: var(--font-manrope);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.view-all-btn:hover {
+    background-color: #e85530;
+    transform: scale(1.02);
+}
