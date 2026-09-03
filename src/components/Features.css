@@ -1,0 +1,91 @@
+:root {
+    --color-bg-features: #0e1412;
+}
+
+.Features-container {
+    width: 100%;
+    min-height: 60rem;
+    background: var(--color-bg-features);
+    font-family: var(--font-manrope);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    gap: 4rem;
+}
+
+/* img */
+.features-img {
+    width: 57rem;
+    height: 57rem;
+    object-fit: cover;
+}
+
+/* information */
+.features-header {
+    text-align: center;
+    max-width: 80rem;
+}
+
+.features-tag {
+    color: var(--color-primary);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.features-title {
+    color: var(--color-primary-text);
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.features-description {
+    color: var(--color-primary-link);
+    font-family: var(--font-manrope);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.features-list li {
+    color: var(--color-primary-text);
+    font-family: var(--font-manrope);
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    padding-left: 4rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+}
+
+.features-list li:hover {
+    color: var(--color-primary);
+    transform: translateX(0.5rem);
+}

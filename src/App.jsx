@@ -8,6 +8,7 @@ import HomePage from "./components/HomePage";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Services from "./components/Services";
+import Features from "./components/Features";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <HomePage />
             <About />
             <Services />
+            <Features />
             <Footer />
         </div>
     );
