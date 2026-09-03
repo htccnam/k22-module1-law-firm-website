@@ -13,6 +13,7 @@
 .information-page {
     width: 57rem;
     height: 45.8rem;
+    flex: 1;
 }
 .detail--strong {
     font-size: 6rem;
@@ -27,7 +28,13 @@
 }
 
 /* video */
-.information-video {
-    width: 65.6rem;
-    height: 56.8rem;
+.video-section {
+    flex: 1;
+}
+.video-section__img {
+    width: 33rem;
+    height: 47.6rem;
+    object-fit: cover;
+    margin: auto auto;
+    display: block;
 }

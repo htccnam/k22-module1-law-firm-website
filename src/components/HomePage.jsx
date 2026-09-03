@@ -1,8 +1,10 @@
 import "./HomePage.css";
+// import anh
+import HomePageImg from "../assets/png_homepage.png";
 function HomePage() {
     return (
         <main className="container">
-            <div className="information-page">
+            <section className="information-page">
                 <p className="information-page__p-ranking">
                     #1 Law Firm in New York
                 </p>
@@ -15,8 +17,14 @@ function HomePage() {
                     fight for your rights!
                 </p>
                 <button className="button">Get a Consultations</button>
-            </div>
-            <div className="information-video"></div>
+            </section>
+            <section className="video-section">
+                <img
+                    src={HomePageImg}
+                    alt="ảnh homepage"
+                    className="video-section__img"
+                />
+            </section>
         </main>
     );
 }
