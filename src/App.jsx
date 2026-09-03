@@ -11,6 +11,7 @@ import Services from "./components/Services";
 import Features from "./components/Features";
 import Attorneys from "./components/Attorneys";
 import Awards from "./components/Awards";
+import Testimonial from "./components/Testimonial.jsx";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
             <Features />
             <Attorneys />
             <Awards />
+            <Testimonial />
             <Footer />
         </div>
     );
