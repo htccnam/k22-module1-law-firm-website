@@ -44,17 +44,81 @@ function Header({ onSectionChange }) {
                 >
                     About
                 </a>
-                <a
-                    href="#"
-                    className="nav-links__item"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        onSectionChange("practice-areas");
-                    }}
-                >
-                    Practice Areas
-                </a>
-                {/* Tương tự cho các mục còn lại */}
+                {/* Practice Areas Dropdown */}
+                <div className="dropdown">
+                    <div
+                        className="dropdown-toggle"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            onSectionChange("services");
+                        }}
+                    >
+                        Practice Areas
+                        <span className="dropdown-arrow">▼</span>
+                    </div>
+                    <div className="dropdown-menu">
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("services");
+                            }}
+                        >
+                            Personal Injury Law
+                        </a>
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("services");
+                            }}
+                        >
+                            Employment Law
+                        </a>
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("services");
+                            }}
+                        >
+                            Immigration Law
+                        </a>
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("services");
+                            }}
+                        >
+                            Family Law
+                        </a>
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("services");
+                            }}
+                        >
+                            Divorce Law
+                        </a>
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("services");
+                            }}
+                        >
+                            Property Law
+                        </a>
+                    </div>
+                </div>
                 <a
                     href="#"
                     className="nav-links__item"
@@ -65,16 +129,31 @@ function Header({ onSectionChange }) {
                 >
                     Attorneys
                 </a>
-                <a
-                    href="#"
-                    className="nav-links__item"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        onSectionChange("page");
-                    }}
-                >
-                    Page
-                </a>
+                {/* Page Dropdown (for Blog) */}
+                <div className="dropdown">
+                    <div
+                        className="dropdown-toggle"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            // Page dropdown - clicking the title could do nothing or toggle
+                        }}
+                    >
+                        Page
+                        <span className="dropdown-arrow">▼</span>
+                    </div>
+                    <div className="dropdown-menu">
+                        <a
+                            href="#"
+                            className="dropdown-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("blog");
+                            }}
+                        >
+                            Blog
+                        </a>
+                    </div>
+                </div>
             </nav>
             <div className="contact">
                 <span>call:</span>

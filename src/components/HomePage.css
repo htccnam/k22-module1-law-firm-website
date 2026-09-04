@@ -9,6 +9,7 @@
     font-size: var(--font-size-primary-imformation);
     line-height: 3rem;
     margin: 0 auto;
+    min-height: 90vh; /* Use viewport height for better responsiveness */
 }
 .information-page {
     width: 57rem;
@@ -38,4 +39,71 @@
     object-fit: cover;
     margin: auto auto;
     display: block;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-primary-imformation: 1.6rem;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .information-page {
+        width: 90%;
+        height: auto;
+        margin: 0 0 2rem 0;
+    }
+
+    .detail--strong {
+        font-size: 4.5rem;
+        line-height: 5.5rem;
+    }
+
+    .button {
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .video-section {
+        width: 90%;
+    }
+
+    .video-section__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    :root {
+        --font-size-primary-imformation: 1.4rem;
+    }
+
+    .information-page {
+        width: 95%;
+    }
+
+    .detail--strong {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+
+    .button {
+        width: 18rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+
+    .video-section__img {
+        height: 25rem;
+    }
 }

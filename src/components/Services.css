@@ -87,6 +87,7 @@
     transition: color 0.3s linear;
     margin-top: auto;
 }
+
 .service-name-button:hover {
     background: var(--color-primary);
     color: #ffffff;
@@ -114,4 +115,83 @@
 .view-all-btn:hover {
     background-color: #e85530;
     transform: scale(1.02);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .Services-container {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+        gap: 3rem;
+    }
+
+    .services-title {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+
+    .services-description {
+        font-size: 1.6rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .service-card {
+        padding: 6rem 1.5rem;
+        min-height: 18rem;
+    }
+
+    .service-name-button {
+        font-size: 2rem;
+    }
+
+    .view-all-btn {
+        width: 15rem;
+        height: 5.5rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    .Services-container {
+        min-height: auto;
+        padding: 3rem 1rem;
+        gap: 2.5rem;
+    }
+
+    .services-title {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .services-description {
+        font-size: 1.4rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .service-card {
+        padding: 5rem 1rem;
+        min-height: 16rem;
+    }
+
+    .service-name-button {
+        font-size: 1.8rem;
+    }
+
+    .view-all-btn {
+        width: 14rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
 }

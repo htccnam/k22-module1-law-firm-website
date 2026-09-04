@@ -5,6 +5,7 @@
     --color-primary-link: #beccc7;
     --color-bg-footer: #000000;
 }
+
 .Footer-container {
     width: 100%;
     max-height: 58.3rem;
@@ -28,6 +29,7 @@
         var(--color-bg-footer);
     padding: 3rem 0;
 }
+
 .section {
     display: flex;
     flex-direction: column;
@@ -39,27 +41,21 @@
     width: 14.5rem;
     height: 17rem;
 }
-.title {
-    font-size: 2rem;
-    line-height: 3rem;
-    font-weight: bold;
-}
-.policy__link {
-    color: var(--color-primary-link);
-    text-decoration: none;
-}
+
 /* pages */
 .section__pages {
     grid-area: pages;
     width: 10.7rem;
     height: 21.4rem;
 }
+
 /* contact */
 .section__contact {
     grid-area: contact;
     width: 23.7rem;
     height: 16.6rem;
 }
+
 /* map */
 .section__map {
     grid-area: map;
@@ -67,29 +63,34 @@
     max-height: 26.8rem;
     border-radius: 1rem;
 }
+
 /* copyrightfooter */
 /* logo */
 .copyright .logo-container__svg {
     width: 3.1rem;
     height: 3.1rem;
 }
+
 .copyright .brand {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--color-primary-text);
 }
+
 .copyright .brand-name {
     font-weight: Bold;
     font-size: 2.4rem;
     line-height: 1.4rem;
 }
+
 .copyright .brand-type {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.4rem;
     margin-top: 0.4rem;
 }
+
 .copyright {
     font-family: var(--font-manrope);
     color: var(--color-primary-link);
@@ -101,10 +102,142 @@
     align-items: flex-end;
     margin: 0 5rem 2rem 5rem;
 }
+
 .social-item {
     width: 3.6rem;
     height: 3.6rem;
     background: #313d39;
     padding: 0.5rem;
     margin: 0 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .imformation-page {
+        grid-template-areas:
+            "policy pages"
+            "contact map"
+            "map map";
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .policy {
+        width: 13rem;
+        height: 15rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .policy__link,
+    .section__pages a,
+    .section__contact a {
+        font-size: 1.4rem;
+    }
+
+    .section__pages {
+        width: 10rem;
+        height: 18rem;
+    }
+
+    .section__contact {
+        width: 20rem;
+        height: 14rem;
+    }
+
+    .section__map {
+        max-width: 40rem;
+        max-height: 22rem;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        margin: 0 2rem 1.5rem 2rem;
+    }
+
+    .social-item {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    .Footer-container {
+        max-height: none;
+        padding: 0;
+    }
+
+    .imformation-page {
+        grid-template-areas:
+            "policy"
+            "pages"
+            "contact"
+            "map";
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .policy {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .section__pages {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .section__contact {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+    }
+
+    .section__map {
+        width: 100%;
+        max-width: 28rem;
+        height: 18rem;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .policy__link,
+    .section__pages a,
+    .section__contact a {
+        display: block;
+        width: fit-content;
+        margin: 0.3rem auto;
+        font-size: 1.3rem;
+    }
+
+    .copyright {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin: 1rem 0;
+    }
+
+    .social-item {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0 0.5rem;
+    }
 }

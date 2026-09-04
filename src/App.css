@@ -1,3 +1,19 @@
 .app-container {
     font-size: 1.6rem;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .app-container {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    .app-container {
+        font-size: 1.4rem;
+    }
+}

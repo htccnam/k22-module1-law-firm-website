@@ -83,3 +83,68 @@
     background: #ffffff;
     display: block;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .awards-container {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+        gap: 4rem;
+    }
+
+    .awards-title {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+
+    .awards-grid {
+        gap: 3.5rem 5rem;
+    }
+
+    .award-card {
+        width: 14rem;
+    }
+
+    .award-image-wrapper {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .award-card:hover {
+        transform: translate(-0.7rem);
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    .awards-container {
+        min-height: auto;
+        padding: 3rem 1rem;
+        gap: 3.5rem;
+    }
+
+    .awards-title {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .awards-grid {
+        gap: 3rem 4rem;
+        justify-content: center;
+    }
+
+    .award-card {
+        width: 12rem;
+    }
+
+    .award-image-wrapper {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .award-card:hover {
+        transform: translate(-0.6rem);
+    }
+}

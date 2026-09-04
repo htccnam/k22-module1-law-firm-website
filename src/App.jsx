@@ -12,6 +12,7 @@ import Features from "./components/Features";
 import Attorneys from "./components/Attorneys";
 import Awards from "./components/Awards";
 import Testimonial from "./components/Testimonial.jsx";
+import Blog from "./components/Blog.jsx";
 // import status
 import { useState } from "react";
 
@@ -30,6 +31,7 @@ function App() {
             {activeSection === "attorneys" && <Attorneys />}
             {activeSection === "awards" && <Awards />}
             {activeSection === "testimonial" && <Testimonial />}
+            {activeSection === "blog" && <Blog />}
             <Footer />
         </div>
     );

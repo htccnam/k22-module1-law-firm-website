@@ -1,12 +1,14 @@
 .header {
     display: flex;
-    width: 117rem;
+    width: 100%;
+    max-width: 117rem;
     height: 6.7rem;
     text-decoration: none;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto;
+    padding: 0 1.5rem;
 }
 /* logo */
 .logo-container {
@@ -38,8 +40,9 @@
 .nav-links {
     display: flex;
     height: 2.8rem;
-    width: 52.3rem;
     gap: 1rem;
+    align-items: center; /* Ensure vertical alignment */
+    flex: 1;
 }
 .nav-links__item {
     text-decoration: none;
@@ -47,6 +50,21 @@
     line-height: 2.8rem;
     color: #0e1412;
     flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    height: 100%; /* Full height of nav-links */
+}
+/* Hover effect for main menu items */
+.nav-links__item:hover {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+/* Hover effect for dropdown toggle */
+.dropdown:hover .dropdown-toggle {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    transition: background-color 0.2s;
 }
 .contact {
     font-size: 1.6rem;
@@ -55,4 +73,189 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%; /* Full height of nav-links */
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    height: 100%; /* Full height */
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position directly below - no gap */
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    color: #0e1412;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Hover effects for dropdown - key fix: no gap between toggle and menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Keep menu open when hovering over dropdown menu */
+.dropdown-menu:hover {
+    display: block;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .header {
+        height: 6rem;
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    .logo-container__svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .brand-name {
+        font-size: 2rem;
+        line-height: 1.2rem;
+    }
+
+    .brand-type {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+    }
+
+    .nav-links__item {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    .contact {
+        font-size: 1.4rem;
+    }
+
+    .dropdown-arrow {
+        font-size: 1rem;
+    }
+
+    .dropdown-item {
+        font-size: 1.3rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    .header {
+        height: 5.5rem;
+        margin: 1rem auto;
+        padding: 0 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        flex: 1 0 100%;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-links {
+        flex: 1 0 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-links__item {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        padding: 0.5rem 0.8rem;
+        border-radius: 3px;
+    }
+
+    .nav-links__item:hover {
+        background-color: rgba(0,0,0,0.08);
+    }
+
+    .contact {
+        flex: 1 0 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    /* Simplify dropdowns on mobile - make them full width buttons */
+    .dropdown {
+        flex: 1 0 100%;
+        justify-content: center;
+    }
+
+    .dropdown-toggle {
+        justify-content: center;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .dropdown-toggle:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border-top: 1px solid #eee;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
 }

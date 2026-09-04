@@ -1,0 +1,268 @@
+:root {
+    --color-bg-blog: #0e1412;
+}
+
+.blog-container {
+    width: 100%;
+    min-height: 70rem;
+    background: var(--color-bg-blog);
+    font-family: var(--font-manrope);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    gap: 5rem;
+}
+
+.blog-header {
+    text-align: center;
+    max-width: 70rem;
+}
+
+.blog-tag {
+    color: var(--color-primary);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-title {
+    color: var(--color-primary-text);
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-description {
+    color: var(--color-primary-link);
+    font-family: var(--font-manrope);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+/* Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    max-width: 110rem;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(253, 96, 56, 0.3);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Ảnh bài viết */
+.blog-image-wrapper {
+    width: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    background: #1a1f1d; /* nền tạm */
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Nội dung */
+.blog-content {
+    padding: 2rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Tác giả */
+.blog-author {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-author-avatar {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--color-primary);
+    padding: 0.2rem;
+}
+
+.author-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #2a2f2d; /* nền tạm cho avatar */
+    display: block;
+}
+
+.blog-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-author-name {
+    color: var(--color-primary-text);
+    font-family: var(--font-manrope);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin: 0;
+}
+
+.blog-author-role {
+    color: var(--color-primary-link);
+    font-family: var(--font-manrope);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin: 0;
+}
+
+/* Tiêu đề bài viết */
+.blog-post-title {
+    color: var(--color-primary-text);
+    font-family: var(--font-manrope);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin: 0 0 2rem 0;
+    flex: 1;
+}
+
+/* Nút Learn More */
+.blog-learn-more {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.6rem;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-manrope);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    background: transparent;
+}
+
+.blog-learn-more:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .blog-container {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+        gap: 4rem;
+    }
+
+    .blog-title {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+
+    .blog-description {
+        font-size: 1.6rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+        max-width: 90rem;
+    }
+
+    .blog-post-title {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+
+    .blog-author-name {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+
+    .blog-author-role {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .blog-learn-more {
+        padding: 0.7rem 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile: <768px */
+@media (max-width: 768px) {
+    .blog-container {
+        min-height: auto;
+        padding: 3rem 1rem;
+        gap: 3.5rem;
+    }
+
+    .blog-title {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .blog-description {
+        font-size: 1.4rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        max-width: 100%;
+    }
+
+    .blog-post-title {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+
+    .blog-author-name {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .blog-author-role {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .blog-learn-more {
+        padding: 0.6rem 1.5rem;
+        font-size: 1.4rem;
+    }
+}
