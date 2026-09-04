@@ -1,6 +1,6 @@
 import "./Header.css";
 
-function Header() {
+function Header({ onSectionChange }) {
     return (
         <header className="header">
             <div className="logo-container">
@@ -24,19 +24,55 @@ function Header() {
             </div>
 
             <nav className="nav-links">
-                <a href="" className="nav-links__item">
+                <a
+                    href="#"
+                    className="nav-links__item"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSectionChange("home");
+                    }}
+                >
                     Home
                 </a>
-                <a href="" className="nav-links__item">
+                <a
+                    href="#"
+                    className="nav-links__item"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSectionChange("about");
+                    }}
+                >
                     About
                 </a>
-                <a href="" className="nav-links__item">
+                <a
+                    href="#"
+                    className="nav-links__item"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSectionChange("practice-areas");
+                    }}
+                >
                     Practice Areas
                 </a>
-                <a href="" className="nav-links__item">
+                {/* Tương tự cho các mục còn lại */}
+                <a
+                    href="#"
+                    className="nav-links__item"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSectionChange("attorneys");
+                    }}
+                >
                     Attorneys
                 </a>
-                <a href="" className="nav-links__item">
+                <a
+                    href="#"
+                    className="nav-links__item"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSectionChange("page");
+                    }}
+                >
                     Page
                 </a>
             </nav>

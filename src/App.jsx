@@ -12,21 +12,24 @@ import Features from "./components/Features";
 import Attorneys from "./components/Attorneys";
 import Awards from "./components/Awards";
 import Testimonial from "./components/Testimonial.jsx";
+// import status
+import { useState } from "react";
 
 function App() {
+    const [activeSection, setActiveSection] = useState("home"); // 'home' là mặc định
     return (
         <div className="app-container">
             {/* 2. Tích hợp Component Header vào đây */}
-            <Header />
+            <Header onSectionChange={setActiveSection} />
 
             {/* Nội dung phía dưới của trang web */}
-            <HomePage />
-            <About />
-            <Services />
-            <Features />
-            <Attorneys />
-            <Awards />
-            <Testimonial />
+            {activeSection === "home" && <HomePage />}
+            {activeSection === "about" && <About />}
+            {activeSection === "services" && <Services />}
+            {activeSection === "features" && <Features />}
+            {activeSection === "attorneys" && <Attorneys />}
+            {activeSection === "awards" && <Awards />}
+            {activeSection === "testimonial" && <Testimonial />}
             <Footer />
         </div>
     );
