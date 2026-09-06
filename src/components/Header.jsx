@@ -3,6 +3,14 @@ import "./Header.css";
 function Header({ onSectionChange }) {
     return (
         <header className="header">
+            {/* Hidden checkbox to control menu state */}
+            <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+            {/* Backdrop to close menu when clicking outside */}
+            <label htmlFor="menu-toggle" className="menu-backdrop" />
+            {/* Label acts as hamburger button */}
+            <label htmlFor="menu-toggle" className="bars-btn">
+                <i className="fa-solid fa-bars"></i>
+            </label>
             <div className="logo-container">
                 <svg
                     width="31"
