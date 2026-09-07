@@ -21,9 +21,6 @@ A responsive, multi‑page website for a law firm built with **React** and **Vit
 - CSS reset and consistent styling using CSS variables
 - Easy to extend with new pages or sections
 
-## 🖥️ Demo
-*(Add a screenshot or link to a live demo if available)*
-
 ## 🛠️ Tech Stack
 - **React 18** (functional components with hooks)
 - **Vite** (fast dev server & bundler)
